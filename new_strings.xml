@@ -1,0 +1,36 @@
+ <resources>
+    <string name="cant_connect_to_internet_please_try_again_after_sometime">Can\'t connect to internet. Please try again after sometime.</string>
+    <string name="location_service">Location Service</string>
+    <string name="turn_on">Turn on</string>
+    <string name="location_service_message">To get best experience it is necessary to turn on your current location</string>
+    <string name="no_gps_signal">No GPS Signal</string>
+    <string name="no_gps_signal_message">We could not find your location. Please turn on your location service.</string>
+    <string name="please_install_google_map">Please install Google Map</string>
+
+
+    <!--empty states text for marvel-->
+    <string name="no_parcel_history_yet">No Parcel Delivery Yet</string>
+    <string name="no_parcel_history_details">Go online and deliver parcels to earn money. You will find all the details of your delivery from here.</string>
+    <string name="no_food_history_yet">No Food Delivery Yet</string>
+    <string name="no_food_history_details">Go online and deliver food to earn money. You will find all the details of your delivery from here.</string>
+    <string name="no_ride_history_yet">No Rides Yet</string>
+    <string name="no_ride_history_details">Go online and take rides to earn money. You will find all the details of your ride from here.</string>
+    <string name="no_quest_history_yet">No Quest Yet</string>
+    <string name="no_quest_history_details">You can earn more money by completing quests. You will find all past and current quests from here.</string>
+    <string name="no_inbox_history_yet">No New Notifications</string>
+    <string name="no_inbox_history_details">You will find necessary notifications about your earning, quest and payout here.</string>
+    <string name="no_support_message">No Support Message</string>
+    <string name="no_support_details">If you have problem with your ride or delivery, please report issue from history.</string>
+
+
+    <!--new strings for marvel - quest-->
+    <string name="you_have_just_completed_one">You have just completed quest milestone for &lt;b>%1$s!&lt;/b>! We will confirm your earning after checking fraudulent activity.</string>
+    <string name="emergency">Emergency</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="for_any_emergency_support">For any emergency support</string>
+    <string name="share_location">Share Location</string>
+    <string name="call_to_contact_for_emergency_service">Call %1$s to Contact for Emergency Service</string>
+    <string name="call_emergency">Call %1$s</string>
+    <string name="share_my_ride_url">Share my ride Url</string>
+
+</resources>

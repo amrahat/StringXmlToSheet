@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<resources>
+   <string name="cant_connect_to_internet_please_try_again_after_sometime">আপনার ইন্টারনেট সংযোগ চেক করুন এবং একটু পরে আবার চেষ্টা করুন।</string>
+   <string name="location_service">লোকেশন সার্ভিস চালু করুন</string>
+   <string name="turn_on">চালু করুন</string>
+   <string name="location_service_message">সঠিকভাবে অ্যাপ চালাতে আপনার ফোনের লোকেশন সার্ভিস চালু করুন।</string>
+   <string name="no_gps_signal">জিপিএস সিগন্যাল পাওয়া যাচ্ছেনা</string>
+   <string name="no_gps_signal_message">আপনার বর্তমান লোকেশন পাওয়া যাচ্ছেনা, সেটিংস থেকে জিপিএস চালু করুন)</string>
+   <string name="please_install_google_map">গুগল ম্যাপ ইনস্টল করুন</string>
+   <string name="no_parcel_history_yet">পার্সেল ডেলিভারি করেননি</string>
+   <string name="no_parcel_history_details">অনলাইন হোন এবং পার্সেল ডেলিভারি করুন। এখানে থেকে প্রতিটি ডেলিভারির বিস্তারিত তথ্য পাবেন।</string>
+   <string name="no_food_history_yet">ফুড ডেলিভারি করেননি</string>
+   <string name="no_food_history_details">ফুড ডেলিভারি দিন আর আয় করুন সহজে, প্রতিটি ডেলিভারির বিস্তারিত তথ্য এখানে পাবেন।</string>
+   <string name="no_ride_history_yet">এখন পর্যন্ত কোন রাইড নেই</string>
+   <string name="no_ride_history_details">অনলাইন হয়ে রাইড নিন, এখান থেকেই প্রতিটি রাইডের বিস্তারিত তথ্য পাবেন।</string>
+   <string name="no_quest_history_yet">আপনার জন্য নির্দিষ্ট কোন কোয়েস্ট নেই</string>
+   <string name="no_quest_history_details">কোয়েস্ট ফিলআপ করে সহজেই বাড়তি টাকা ইনকাম করতে পারেন। এখানে বর্তমান ও পূর্বের সকল কোয়েস্ট লিস্ট দেখতে পারবেন।</string>
+   <string name="no_inbox_history_yet">নতুন নোটিফিকেশন নেই</string>
+   <string name="no_inbox_history_details">আপনার ইনকাম, কোয়েস্ট, পে আউট-সহ গুরুত্বপূর্ণ সকল নোটিফিকেশন পাবেন এখানে।</string>
+   <string name="no_support_message">সাপোর্ট মেসেজ নেই</string>
+   <string name="no_support_details">রাইড এবং ডেলিভারি নিয়ে যদি কোন সমস্যা দেখা দেয় তাহলে দয়া করে হিস্টোরি থেকে রিপোর্ট করুন)</string>
+   <string name="you_have_just_completed_one">আপনি &amp;lt;b&gt;%1$s!&amp;lt;/b&gt; কোয়েস্ট-এর টার্গেট সম্পন্ন করেছেন।কোয়েস্ট বোনাসের টাকা আপনার একাউন্ট-এ শীঘ্রই পৌঁছে যাবে।</string>
+   <string name="emergency">জরুরী</string>
+   <string name="emergency_contact">জরুরী যোগাযোগ</string>
+   <string name="for_any_emergency_support">যেকোন জরুরী সাহায্যের জন্য যোগাযোগ</string>
+   <string name="share_location">লোকেশন শেয়ার করুন</string>
+   <string name="call_to_contact_for_emergency_service">%1$s নাম্বারে জরুরী সময়ে যোগাযোগ করুন</string>
+   <string name="call_emergency">%1$s  কল করুন</string>
+   <string name="share_my_ride_url">রাইডের লিংক শেয়ার করুন</string>
+</resources>
