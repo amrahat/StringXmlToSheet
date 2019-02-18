@@ -13,11 +13,9 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # The ID and range of a sample spreadsheet.
 SAMPLE_SPREADSHEET_ID = '1HCc9z-BUSPeZNMKWVW39ag_Vm0mIoBbY-qXcSLv-kmA'
-SAMPLE_RANGE_NAME = 'Sheet1!F5:G10'
 
 
-
-def get_list_to_add(filename,include_key):
+def get_list_to_add(filename, include_key):
     e = xml.etree.ElementTree.parse(filename).getroot()
     print(e.tag)
     list_to_add = []
@@ -31,15 +29,16 @@ def get_list_to_add(filename,include_key):
             str_arr.append(name)
         str_arr.append(value)
         list_to_add.append(str_arr)
-        
+
     print(len(list_to_add))
     return list_to_add
+
 
 def main():
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
-    
+
     print('Number of arguments:', len(sys.argv), 'arguments.')
     print('Argument List:', str(sys.argv))
 
@@ -47,7 +46,6 @@ def main():
         string_file_name = sys.argv[1]
     except IndexError as e:
         string_file_name = None
-    
 
     print(string_file_name)
 
@@ -74,35 +72,26 @@ def main():
 
     # Call the Sheets API
     sheet = service.spreadsheets()
-    
 
     values = []
-    
+
     try:
-        values = get_list_to_add(string_file_name,True)
+        values = get_list_to_add(string_file_name, True)
         # values.insert(0,["Key","Value"])
 
-        update_range = "Sheet1!B4:C"+str(4+len(values))
-        update(values,service,update_range)
-        # insert_some_nepali(service)
+        update_range = "driver_love_vi!B4:C" + str(4 + len(values))
+        update(values, service, update_range)
     except IOError as e:
         print("No such file found")
-    
-    
-
-def insert_some_nepali(service):
-    values = get_list_to_add("nepali.xml",False)
-    nepali_update_range = "Sheet1!E4"
-    update(values,service,nepali_update_range)
 
 
-def update(values,service,update_range):
+def update(values, service, update_range):
     print(len(values))
     body = {
         'values': values
     }
     result = service.spreadsheets().values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=update_range,
-    valueInputOption="RAW", body=body).execute()
+                                                    valueInputOption="RAW", body=body).execute()
 
     print('{0} cells updated ok.'.format(result.get('updatedCells')))
 

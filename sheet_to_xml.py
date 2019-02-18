@@ -9,7 +9,6 @@ import xml.etree.ElementTree as ET
 import xml.dom.minidom as minidom
 import codecs
 
-
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
@@ -22,13 +21,12 @@ def main():
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
-    
-    
-    service = authenticate()
-    
 
-    
-    get_bangla_in_xml(service)
+    service = authenticate()
+
+    # get_bangla_in_xml(service)
+    get_nepali_in_xml(service)
+
 
 def authenticate():
     creds = None
@@ -54,15 +52,14 @@ def authenticate():
 
     return service
 
-    
 
-def get_strings_in_xml(service,range,key_index,value_index,file_name):
+def get_strings_in_xml(service, range, key_index, value_index, file_name):
     result = service.spreadsheets().values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
-                                range=range).execute()
+                                                 range=range).execute()
     values = result.get('values', [])
 
     root = ET.Element("resources")
-    
+
     if not values:
         print('No data found.')
     else:
@@ -70,28 +67,25 @@ def get_strings_in_xml(service,range,key_index,value_index,file_name):
             ET.SubElement(root, "string", name=row[key_index].strip()).text = row[value_index].strip()
 
     tree = ET.ElementTree(root)
-    xmlstr = minidom.parseString(ET.tostring(root,)).toprettyxml(indent="   ")
-    with codecs.open(file_name, "w","utf-8") as f:
+    xmlstr = minidom.parseString(ET.tostring(root, )).toprettyxml(indent="   ")
+    with codecs.open(file_name, "w", "utf-8") as f:
         f.write(xmlstr)
 
-    print("Data saved in "+file_name)
+    print("Data saved in " + file_name)
 
 
 def get_bangla_in_xml(service):
-    range = 'Sheet3!B4:E30'
-    key_index = 0
-    value_index = 3
-    get_strings_in_xml(service,range,key_index,value_index,"bangla.xml") 
-
-def get_nepali_in_xml(service):
-    range = 'Sheet3!B4:D30'
+    range = 'driver_love_vi!B4:D36'
     key_index = 0
     value_index = 2
-    get_strings_in_xml(service,range,key_index,value_index,"nepali.xml")    
+    get_strings_in_xml(service, range, key_index, value_index, "bangla_vi.xml")
 
 
-    
-
+def get_nepali_in_xml(service):
+    range = 'driver_love_vi!B4:E36'
+    key_index = 0
+    value_index = 3
+    get_strings_in_xml(service, range, key_index, value_index, "nepali_vi.xml")
 
 
 if __name__ == '__main__':
