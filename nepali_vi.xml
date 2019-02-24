@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<resources>
+   <string name="start_test">परीक्षण सुरु गर्नुहोस्</string>
+   <string name="not_getting_request">रिक्वेस्ट प्राप्त गर्नुभएन?\nहामी मद्दत गर्न सक्छौं।</string>
+   <string name="welcome_to_diagnostics_description">हामी उपकरण विशिष्ट समस्या पत्ता लगाउने प्रयास गर्नेछौँ र उनीहरूको समस्याको समाधानका लागि सुझाव दिनेछौँ l</string>
+   <string name="current_app_version">हालको एप भर्सन (%s)</string>
+   <string name="checked">जाँचेको</string>
+   <string name="problem_found">समस्या फेला पर्यो</string>
+   <string name="turn_on_internet">हामी इन्टरनेटसँग जडान गर्न सक्दैनौं। कृपया आफ्नो इन्टरनेट जडान र इन्टरनेट ब्यालेन्स जाँच गर्नुहोस्।</string>
+   <string name="fix_your_internet">तपाईंको इन्टरनेट निश्चित गर्नुहोस्</string>
+   <string name="test_again">फेरि परीक्षण गर्नुहोस्</string>
+   <string name="get_requests">रिक्वेस्ट प्राप्त गर्नुहोस्</string>
+   <string name="check_notification">अधिसूचना जाँच गर्नुहोस्</string>
+   <string name="diagnostic_success">हामीले तपाईंको उपकरणको साथ कुनै समस्या पत्ता लगाएनौं। यदि तपाइँसँग अझै पनि शङ्का छ भने, तपाइँ हाम्रो ग्राहक सम्पर्क केन्द्रमा सम्पर्क गर्न सक्नुहुनेछ।</string>
+   <string name="we_can_see_you_near">हामी तपाईलाई &lt;b&gt;%s&lt;/ b&gt; को नजिक देख्न सक्छौं। के तपाई  त्यहाँ हुनुहुन्छ ? रिक्वेस्ट प्राप्त गर्न तपाईंको नजिकको hotzone मा जान सक्नुहुन्छ</string>
+   <string name="is_this_your_current_location">के यो तपाईंको वर्तमान स्थान हो?</string>
+   <string name="how_to_fix">कसरि फिक्स गर्ने</string>
+   <string name="quick_short_intro">अधिसूचना वा ध्वनि सम्बन्धी समस्याहरू समाधान गर्न छिटो समाधान।</string>
+   <string name="check">चेक गर्नुहोस्</string>
+   <string name="cant_detect_location">स्थान पत्ता लगाउन सकेनौं</string>
+   <string name="turn_on_gps_location">GPS स्थान खोल्नुहोस् र &lt;b&gt; उच्च शुद्धता &lt;/b&gt; मोड चयन गर्नुहोस्। साथै, इन्टरनेट डाटा जाँच गर्नुहोस् र ब्याट्रि बचत बन्द गर्नुहोस्</string>
+   <string name="we_will_check_internet">हामी तपाईंको वर्तमान इन्टरनेट जडानको स्थिरता जाँच गर्नेछौं।</string>
+   <string name="we_will_check_gps">हामी तपाईंको वर्तमान स्थान सही रूपमा देखाउनको लागि जीपीएस जाँच गर्नेछौं।</string>
+   <string name="we_will_send_test_notification">हामी तपाईंलाई एक परीक्षण अधिसूचना पठाउनेछौं र तपाईंको सूचना आवाज जाँच गर्नेछौं।</string>
+   <string name="current_location">वर्तमान स्थान</string>
+   <string name="fix_this_problem">यो समस्या समाधान गर्नुहोस्</string>
+   <string name="go_back_to_map">नक्शामा फर्कनुहोस्</string>
+   <string name="quick_short_description">१) नोटिफिकेसन स्लाइडर खोल्नुहोस् \n२)  हवाईजहाज मोड अन गर्नुहोस्। \n३) केही समय पर्खनुहोस्। \n४) हवाईजहाज मोड बन्द गर्नुहोस्। \n\n&lt;b&gt;त्यस पछि,&lt;/b&gt;\n१) केही समयको लागि नोतीफिकेसन स्लाइडमा रहेको Pathao ड्राइभ एप थिच्नुहोस्।\n२) एप सेटिङमा जानुहोस्। \n३) प्राथमिकता, ध्वनि र कम्पन विकल्प खोल्नुहोस्।</string>
+   <string name="watch_video">यदि तपाइँ प्रक्रियाको बारेमा पक्का छैन भने, &lt;b&gt;कृपया यो छोटो भिडियो हेर्नुहोस्&lt;/b&gt;</string>
+   <string name="referrer_text">तपाइले रिफर गर्नुभएको</string>
+   <string name="scheme_title_text">कसैलाई %1$s मार्फत रिफर गर्नुहोस् र %2$s कमाउनुहोस्</string>
+   <string name="remind_friend_to_take_ride">सवारी लिन आफ्नो मित्रलाई सम्झाउनुहोस्।</string>
+   <string name="preferred_dest_remaining_text_times">तपाईं आफ्नो गन्तव्य %d धेरै पटक चयन गर्न सक्नुहुन्छ</string>
+   <string name="preferred_dest_remaining_text_time">तपाईं आफ्नो गन्तव्य %d धेरै पटक चयन गर्न सक्नुहुन्छ</string>
+   <string name="done_fix">भयो!</string>
+</resources>

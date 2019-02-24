@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<resources>
+    <string name="refer_and_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="earned">Earned</string>
+    <string name="possible">Possible</string>
+    <string name="referred_people">Referred People</string>
+    <string name="ride_shared">Ride Shared</string>
+    <string name="referral_share_text">Share your unique code with friends. The more you share, the more you earn. </string>
+    <string name="share">Share</string>
+    <string name="possible_earning">Possible Earning</string>
+    <string name="ask_to_share_referral">You can earn up to  &lt;b>%s&lt;/b> from people you have referred already. Ask them to complete challenge, earn more and more.</string>
+    <string name="car_lite_vertical">Car Lite</string>
+    <string name="car_plus_vertical">Car Plus</string>
+    <string name="auto_vertical">Auto</string>
+    <string name="bycycle_vertical">Bicycle</string>
+    <string name="referral_scheme">Referral Schemes</string>
+    <string name="scheme_info">Refer your %1$s friends to ride with Pathao and you can earn upto &lt;b>%2$s&lt;/b> when they complete their challenge.</string>
+    <string name="completed">Completed</string>
+    <string name="ongoing">On Going</string>
+    <string name="referred_trip_count">&lt;b>%s&lt;/b> Trips</string>
+    <string name="referral_empty_heading">Seems like you’re losing out on some cash</string>
+    <string name="referral_empty_message">Share the code with friends and ask them to use it in the app.</string>
+    <string name="share_your_referral">Share your referral code</string>
+    <string name="share_code">Share the code with friends and ask them to use it during registration.</string>
+    <string name="how_it_works">How it works</string>
+    <string name="friend_take_first_trip">Your friend complete the challenge</string>
+    <string name="get_extra_money">Both of you will earn money</string>
+    <string name="location_permission_required">Location Permission Required</string>
+    <string name="already_reported">Already reported</string>
+    <string name="rider">rider</string>
+    <string name="captain">captain</string>
+    <string name="cyclist">cyclist</string>
+    <string name="both_get_rewards">If your friend completes the challenge, both of you will earn the rewards.</string>
+    <string name="needs_to_complete_trip_with_incentive_deadline">Your friend needs to complete %s trips within %1$s days to earn %2$s .</string>
+    <string name="needs_to_complete_trip_with_incentive">Your friend needs to complete %1$s trips to earn %2$s .</string>
+    <string name="needs_to_complete_trip_with_deadline">Your friend needs to complete %1$s trips within %2$s days</string>
+    <string name="needs_to_complete_trip">Your friend needs to complete %s trips</string>
+    <string name="have_not_yet_referred">You haven’t referred anyone till now. Refer your friends, earn more money.</string>
+    <string name="you_will_earn">You will earn money</string>
+    <string name="you_will_earn_subtitle">If your friend completes the challenge, you will earn the reward money.</string>
+    <string name="invite_and_earn">Refer and Earn</string>
+    <string name="you_have_to_change_channel_settings">You have to go to settings to enable sound.</string>
+    <string name="did_you_hear">Did you hear the notification sound?</string>
+    <string name="give_rides">Give  %1$s  rides in %2$s days to earn %3$s</string>
+    <string name="give_rides_without_deadline">Give  %1$s  rides in earn %2$s</string>
+
+</resources>

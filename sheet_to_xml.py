@@ -82,10 +82,10 @@ def get_bangla_in_xml(service):
 
 
 def get_nepali_in_xml(service):
-    range = 'driver_love_vi!B4:E36'
+    range = 'referral!B4:D46'
     key_index = 0
-    value_index = 3
-    get_strings_in_xml(service, range, key_index, value_index, "nepali_vi.xml")
+    value_index = 2
+    get_strings_in_xml(service, range, key_index, value_index, "nepali_referral.xml")
 
 
 if __name__ == '__main__':
