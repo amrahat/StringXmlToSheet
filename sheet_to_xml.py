@@ -10,7 +10,7 @@ import xml.dom.minidom as minidom
 import codecs
 
 # If modifying these scopes, delete the file token.pickle.
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets']  #/readonly
 
 # The ID and range of a sample spreadsheet.
 SAMPLE_SPREADSHEET_ID = '1HCc9z-BUSPeZNMKWVW39ag_Vm0mIoBbY-qXcSLv-kmA'
@@ -24,8 +24,8 @@ def main():
 
     service = authenticate()
 
-    get_bangla_in_xml(service)
-    # get_nepali_in_xml(service)
+    # get_bangla_in_xml(service)
+    get_nepali_in_xml(service)
 
 
 def authenticate():
@@ -76,17 +76,17 @@ def get_strings_in_xml(service, range, key_index, value_index, file_name):
 
 
 def get_bangla_in_xml(service):
-    range = 'voice_training!B5:D18'
+    range = 'new_sprint!B4:D8'
     key_index = 0
     value_index = 2
-    get_strings_in_xml(service, range, key_index, value_index, "audio_training_bangla.xml")
+    get_strings_in_xml(service, range, key_index, value_index, "new_sprint_bangla.xml")
 
 
 def get_nepali_in_xml(service):
-    range = 'MXD!B4:E16'
+    range = 'MXD!B4:E8'
     key_index = 0
     value_index = 3
-    get_strings_in_xml(service, range, key_index, value_index, "nepali_mxd.xml")
+    get_strings_in_xml(service, range, key_index, value_index, "new_sprint_nepali.xml")
 
 
 if __name__ == '__main__':

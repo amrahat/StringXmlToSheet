@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<resources>
-    <string name="adjust_digital_payment">Adjust Due with Digital Payment Credit</string>
-    <string name="credit_balance">Credit Balance: %1$s</string>
-    <string name="adjust_due_by_card">Adjust Due with bKash/Credit Card/iPay</string>
-    <string name="minimum_payable_amount">* Minimum payable amount is %1$s</string>
-    <string name="due_adjustment_successful">Due adjustment successful</string>
-</resources>

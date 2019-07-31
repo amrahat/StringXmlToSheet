@@ -79,7 +79,7 @@ def main():
         values = get_list_to_add(string_file_name, True)
         # values.insert(0,["Key","Value"])
 
-        update_range = "driver_checkout!B4:C" + str(4 + len(values))
+        update_range = "new_sprint!B4:C" + str(4 + len(values))
         update(values, service, update_range)
     except IOError as e:
         print("No such file found")
