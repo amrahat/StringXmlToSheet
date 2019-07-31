@@ -19,16 +19,16 @@ def get_list_to_add(filename, include_key):
     e = xml.etree.ElementTree.parse(filename).getroot()
     print(e.tag)
     list_to_add = []
-    for string in e.findall('string'):
+    for array in e.findall('string-array'):
         # print string.get('name') + "," + string.text
-        name = string.get('name')
-        value = string.text
+        for item in array.findall('item'):
+            print(item.text)
 
-        str_arr = []
-        if include_key:
-            str_arr.append(name)
-        str_arr.append(value)
-        list_to_add.append(str_arr)
+            str_arr = []
+            # if include_key:
+            str_arr.append(array.get('name'))
+            str_arr.append(item.text)
+            list_to_add.append(str_arr)
 
     print(len(list_to_add))
     return list_to_add
@@ -45,7 +45,7 @@ def main():
     try:
         string_file_name = sys.argv[1]
     except IndexError as e:
-        string_file_name = None
+        string_file_name = "new_array.xml"
 
     print(string_file_name)
 
@@ -79,7 +79,7 @@ def main():
         values = get_list_to_add(string_file_name, True)
         # values.insert(0,["Key","Value"])
 
-        update_range = "driver_checkout!B4:C" + str(4 + len(values))
+        update_range = "food_event!B4:C" + str(4 + len(values))
         update(values, service, update_range)
     except IOError as e:
         print("No such file found")

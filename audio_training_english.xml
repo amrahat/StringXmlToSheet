@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<resources><string name="in_app_training">In App Training</string>
+    <string name="training_serial">Training %1$d</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="voice_training">Voice Training</string>
+    <string name="audio_delete_confirm_title">Clear Downloaded File?</string>
+    <string name="audio_delete_confirm_subtitle">You can clean your memory but will have to download the audio again.</string>
+    <string name="clear">Clear</string>
+    <string name="voice_training_desc">Learn how to solve common problems and get &lt;b>more requests.&lt;/b></string>
+    <string name="allow_file_saving">Allow File Saving</string>
+    <string name="need_storage_permission_desc">We need storage permission to save audio training.</string>
+    <string name="turn_on_storage">TURN ON STORAGE</string>
+    <string name="stop_download">Stop Download</string>
+    <string name="we_are_downloading_training_audio">We are downloading training audio for you. If you go back, we will not download the audios.</string>
+
+</resources>

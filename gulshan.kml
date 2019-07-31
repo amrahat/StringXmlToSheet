@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Shapes</name>
+        <Style id="thickLine">
+            <LineStyle>
+                <width>2.5</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>7f067eb0</color>
+            </PolyStyle>
+        </Style>
+        <Style id="transparent50Poly">
+            <PolyStyle>
+                <color>7f067eb0</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Shape1</name>
+            <description>Shape1</description>
+            <LineString>
+                <coordinates>90.42128500000001,23.810722,0 90.41492300000004,23.811537,0
+                    90.41356100000007,23.809578,0 90.41609900000003,23.806202,0
+                    90.406746,23.804747,0 90.40634399999999,23.801566,0
+                    90.40233999999998,23.801306,0 90.40141300000005,23.796951,0
+                    90.39747399999999,23.796069,0 90.39695499999993,23.786599,0
+                    90.39985000000001,23.786296,0 90.39779499999997,23.777954,0
+                    90.397742,23.773722,0 90.40519900000004,23.774717,0 90.41789300000005,23.7713,0
+                    90.42433299999993,23.768512,0 90.42715900000007,23.781047,0
+                    90.42128500000001,23.810722,0
+                </coordinates>
+            </LineString>
+            <styleUrl>#thickLine</styleUrl>
+        </Placemark>
+        <Placemark>
+            <name>Shape</name>
+            <description>Shape</description>
+            <LineString>
+                <coordinates>90.40619463174653,23.801787970372594,0
+                    90.42306527169444,23.801892398081996,0
+                </coordinates>
+            </LineString>
+            <styleUrl>#thickLine</styleUrl>
+        </Placemark>
+        <Placemark>
+            <name>Shape</name>
+            <description>Shape</description>
+            <LineString>
+                <coordinates>90.40636472030064,23.80191085416024,0
+                    90.42586842213018,23.787686950722048,0
+                </coordinates>
+            </LineString>
+            <styleUrl>#thickLine</styleUrl>
+        </Placemark>
+        <Placemark>
+            <name>Shape</name>
+            <description>Shape</description>
+            <LineString>
+                <coordinates>90.40637017053746,23.801881120806033,0
+                    90.40843097916081,23.773882241146097,0
+                </coordinates>
+            </LineString>
+            <styleUrl>#thickLine</styleUrl>
+        </Placemark>
+        <Placemark>
+            <name>Shape</name>
+            <description>Shape</description>
+            <LineString>
+                <coordinates>90.42575063829804,23.787803029773098,0
+                    90.40835565882276,23.774240606062374,0
+                </coordinates>
+            </LineString>
+            <styleUrl>#thickLine</styleUrl>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,3 +1,4 @@
+# 1NzJZgQiPO7wnEH8O2sGyWRSzs8KmsNlamGttBZRtk6U
 from __future__ import print_function
 import pickle
 import os.path
@@ -9,23 +10,21 @@ import xml.etree.ElementTree as ET
 import xml.dom.minidom as minidom
 import codecs
 
-# If modifying these scopes, delete the file token.pickle.
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = '1HCc9z-BUSPeZNMKWVW39ag_Vm0mIoBbY-qXcSLv-kmA'
-SAMPLE_RANGE_NAME = 'Sheet1!B4:D13'
+SAMPLE_SPREADSHEET_ID = '1NzJZgQiPO7wnEH8O2sGyWRSzs8KmsNlamGttBZRtk6U'
+
+
+# SAMPLE_SPREADSHEET_ID = '1HCc9z-BUSPeZNMKWVW39ag_Vm0mIoBbY-qXcSLv-kmA'
 
 
 def main():
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
-
     service = authenticate()
-
     get_bangla_in_xml(service)
-    # get_nepali_in_xml(service)
 
 
 def authenticate():
@@ -57,36 +56,35 @@ def get_strings_in_xml(service, range, key_index, value_index, file_name):
     result = service.spreadsheets().values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                                  range=range).execute()
     values = result.get('values', [])
-
+    f = open("demofile.txt", "a")
     root = ET.Element("resources")
 
     if not values:
         print('No data found.')
     else:
         for row in values:
-            print(row[key_index].strip())
-            ET.SubElement(root, "string", name=row[key_index].strip()).text = row[value_index].strip()
+            if len(row) == 1:
+                print(row[0].strip())
+                varName = row[0].strip()
+                varNameUnderScore = varName.replace(" ", "_").upper()
 
-    tree = ET.ElementTree(root)
-    xmlstr = minidom.parseString(ET.tostring(root, )).toprettyxml(indent="   ")
-    with codecs.open(file_name, "w", "utf-8") as f:
-        f.write(xmlstr)
+                f.write("String "+varNameUnderScore+" = \""+row[0].strip()+"\";\n")
 
-    print("Data saved in " + file_name)
+        # ET.SubElement(root, "string", name=row[key_index].strip()).text = row[value_index].strip()
+
+    # tree = ET.ElementTree(root)
+    # xmlstr = minidom.parseString(ET.tostring(root, )).toprettyxml(indent="   ")
+    # with codecs.open(file_name, "w", "utf-8") as f:
+    #     f.write(xmlstr)
+    #
+    # print("Data saved in " + file_name)
 
 
 def get_bangla_in_xml(service):
-    range = 'voice_training!B5:D18'
+    range = 'Drive App!B3:B'
     key_index = 0
     value_index = 2
-    get_strings_in_xml(service, range, key_index, value_index, "audio_training_bangla.xml")
-
-
-def get_nepali_in_xml(service):
-    range = 'MXD!B4:E16'
-    key_index = 0
-    value_index = 3
-    get_strings_in_xml(service, range, key_index, value_index, "nepali_mxd.xml")
+    get_strings_in_xml(service, range, key_index, value_index, "bangla_vsi.xml")
 
 
 if __name__ == '__main__':

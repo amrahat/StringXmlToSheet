@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<resources>
+    <string-array name="food_report_item_restaurant_issue">
+        <item>Restaurant does not exist</item>
+        <item>The restaurant address has been changed</item>
+        <item>Restaurant is closed</item>
+    </string-array>
+
+    <string-array name="food_report_item_app_issue">
+        <item>Location not visible</item>
+        <item>GPS problem</item>
+    </string-array>
+
+    <string-array name="food_report_item_customer_issue">
+        <item>Wrong customer phone number</item>
+        <item>Wrong customer Address</item>
+        <item>Customer Cancellation</item>
+        <item>Repeated customer</item>
+        <item>Short delivery</item>
+        <item>Food was damaged</item>
+        <item>Drop off location is out of range</item>
+        <item>Foodman don't want to deliver</item>
+        <item>Vehicle problem</item>
+        <item>Seems to be a fake order</item>
+        <item>Customer wanted to change the drop off location</item>
+    </string-array>
+
+    <string-array name="food_report_item_food_price_issue">
+        <item>The restaurant bill and app bill was different</item>
+    </string-array>
+    <string-array name="food_report_item_delivery_issue">
+        <item>I am not getting any delivery request</item>
+        <item>Getting request from far away / long distance</item>
+        <item>The app is not making noise</item>
+    </string-array>
+</resources>

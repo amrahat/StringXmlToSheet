@@ -10,11 +10,11 @@ import xml.dom.minidom as minidom
 import codecs
 
 # If modifying these scopes, delete the file token.pickle.
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 
 # The ID and range of a sample spreadsheet.
 SAMPLE_SPREADSHEET_ID = '1HCc9z-BUSPeZNMKWVW39ag_Vm0mIoBbY-qXcSLv-kmA'
-SAMPLE_RANGE_NAME = 'Sheet1!B4:D13'
+SAMPLE_RANGE_NAME = 'food_event!B4:CD23'
 
 
 def main():
@@ -59,13 +59,24 @@ def get_strings_in_xml(service, range, key_index, value_index, file_name):
     values = result.get('values', [])
 
     root = ET.Element("resources")
-
+    current_array = ""
+    element = ET.Element("string-array")
     if not values:
         print('No data found.')
     else:
         for row in values:
             print(row[key_index].strip())
-            ET.SubElement(root, "string", name=row[key_index].strip()).text = row[value_index].strip()
+            print("current: "+current_array)
+
+            if current_array != row[key_index].strip():
+                element = ET.SubElement(root, "string-array", name=row[key_index].strip())
+                ET.SubElement(element, "item").text = row[value_index].strip()
+                current_array = row[key_index].strip()
+            else:
+                ET.SubElement(element, "item").text = row[value_index].strip()
+
+        # print(row[value_index].strip())
+        # ET.SubElement(root, "string", name=row[key_index].strip()).text = row[value_index].strip()
 
     tree = ET.ElementTree(root)
     xmlstr = minidom.parseString(ET.tostring(root, )).toprettyxml(indent="   ")
@@ -76,10 +87,10 @@ def get_strings_in_xml(service, range, key_index, value_index, file_name):
 
 
 def get_bangla_in_xml(service):
-    range = 'voice_training!B5:D18'
+    range = 'food_event!B4:CD23'
     key_index = 0
     value_index = 2
-    get_strings_in_xml(service, range, key_index, value_index, "audio_training_bangla.xml")
+    get_strings_in_xml(service, range, key_index, value_index, "array_output.xml")
 
 
 def get_nepali_in_xml(service):

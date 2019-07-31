@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<resources>
+    <string name="review_this_action">Review This Action</string>
+    <string name="why_do_you_want_to_review_this_suspicious">Why do you want to review this suspicious ride?</string>
+    <string name="i_havent_done_anything_wrong">I haven’t done anything wrong</string>
+    <string name="i_have_committed_it_by_mistake">I have committed it by mistake, I will never do this again.</string>
+    <string name="other">Other</string>
+    <string name="review">Review</string>
+    <string name="please_type_or_select_your_reason_to_review">Please type or select your reason to review</string>
+    <string name="write_your_own_reason">Write your own reason</string>
+    <string name="your_review_to_change_this_suspicious_ride_is_under">Your review to change this Suspicious Ride is
+        under consideration. You will be notified soon.
+    </string>
+    <string name="review_is_under_obeservation">Review is Under Observation</string>
+    <string name="review_rejected">Review Rejected</string>
+    <string name="unfortunately_your_review_was_rejected">Unfortunately your review was rejected. We are sure this was a
+        suspicious ride. This ride might not qualify for quest and due adjustment.
+    </string>
+    <string name="review_requested_successfully">Review requested successfully</string>
+</resources>

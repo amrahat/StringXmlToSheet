@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<resources>
+   <string name="review_this_action">রিভিউ করুন</string>
+   <string name="why_do_you_want_to_review_this_suspicious">আপনি কেন এই রাইডের জন্য রিভিউ করতে চান?</string>
+   <string name="i_havent_done_anything_wrong">আমি কোন নিয়ম ভঙ্গ করিনি</string>
+   <string name="i_have_committed_it_by_mistake">আমি ভুল করে নিয়ম ভঙ্গ করেছি। পরবর্তীতে আর কখনো নিয়ম ভঙ্গ করবোনা।</string>
+   <string name="other">অন্যান্য</string>
+   <string name="review">রিভিউ</string>
+   <string name="please_type_or_select_your_reason_to_review">দয়া করে আপনি কারণ নির্বাচন করুন বা নিজে লিখুন</string>
+   <string name="write_your_own_reason">কারণ লিখুন</string>
+   <string name="your_review_to_change_this_suspicious_ride_is_under">আপনার সন্দেহজনক রাইডের রিভিউ আমরা যাচাই করছি। আপনাকে নোটিফিকেশনের মাধ্যমে সিদ্বান্ত জানানো হবে।</string>
+   <string name="review_is_under_obeservation">আপনার রিভিউ বিবেচনা করা হচ্ছে।</string>
+   <string name="review_rejected">রিভিউ বাতিল করা হয়েছে।</string>
+   <string name="unfortunately_your_review_was_rejected">আমাদের পর্যালোচনায় আপনার রাইডটি বৈধ ছিল না। তাই রিভিউ বাতিল করা হয়েছে এবং এই রাইড কোয়েস্ট বা ডিউ অ্যাডজাস্টমেন্টের জন্য উপযুক্ত না হতেও পারে।</string>
+   <string name="review_requested_successfully">সফলভাবে রিভিউ এর অনুরোধ করা হয়েছে।</string>
+</resources>
